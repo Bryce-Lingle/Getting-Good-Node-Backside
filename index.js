@@ -16,22 +16,22 @@ inquirer.prompt([
         type:'input',
      },
      {
-        message:'',
+        message:'Enter installation instructions: ',
         name:'installation',
         type:'input',
      },
      {
-        message:'',
+        message:'Enter usage information',
         name:'usage',
         type:'input',
      },
      {
-        message:'',
+        message:'Enter contributing guidlines',
         name:'contributing',
         type:'input',
      },
      {
-        message:'',
+        message:'Enter tests instrictions',
         name:'tests',
         type:'input',
      },
