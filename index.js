@@ -52,3 +52,11 @@ inquirer.prompt([
         type:'input',
      },
 ])
+.then((answers) => {
+    const readmeContent =
+
+fs.writeFile('README.md', readmeContent, (err) => {
+    if (err) throw err;
+    console.log('README.md file has been generated!')
+    });
+})
