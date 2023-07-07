@@ -52,8 +52,42 @@ inquirer.prompt([
         type:'input',
      },
 ])
-.then((answers) => {
+.then((responses) => {
+    console.log(responses);
+
     const readmeContent =
+`# ${responses.title}
+
+## Table of Contents
+        - [Description](#description)
+        - [Installation](#installation)
+        - [Usage](#usage)
+        - [License](#license)
+        - [Contributing](#contributing)
+        - [Tests](#tests)
+        - [Questions](#questions)
+
+ ## Description
+    ${responses.description}
+
+## Installation
+    ${responses.installation}
+
+## Usage
+${responses.usage}
+
+## License
+This application is covered under the ${responses.license} license. 
+
+## Contributing
+${responses.contribution}
+
+## Tests
+${responses.tests}
+
+## Questions
+For additional questions, you can reach me through GitHub: [${responses.github}](https://github.com/${responses.github})
+Contact me by email: ${responses.email}`
 
 fs.writeFile('README.md', readmeContent, (err) => {
     if (err) throw err;
